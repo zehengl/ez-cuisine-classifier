@@ -2,7 +2,7 @@
 
 ## Environment
 
-- Python 3.7
+- Python 3.6
 - Windows 10
 
 ## Coding Style
