@@ -34,23 +34,25 @@ pipeline = Pipeline(
     [("tfidf", TfidfVectorizer()), ("clf", TransformedTargetRegressor())]
 )
 
-parameters = {
-    "clf": (
-        BernoulliNB(),
-        DecisionTreeClassifier(),
-        DummyClassifier(),
-        ExtraTreeClassifier(),
-        KNeighborsClassifier(),
-        LinearSVC(),
-        MultinomialNB(),
-        PassiveAggressiveClassifier(),
-        Perceptron(),
-        RidgeClassifier(),
-        SGDClassifier(),
-        LogisticRegression(),
-        SVC(),
-    )
-}
+parameters = [
+    {
+        "clf": (
+            BernoulliNB(),
+            DecisionTreeClassifier(),
+            DummyClassifier(),
+            ExtraTreeClassifier(),
+            KNeighborsClassifier(),
+            LinearSVC(),
+            MultinomialNB(),
+            PassiveAggressiveClassifier(),
+            Perceptron(),
+            RidgeClassifier(),
+            SGDClassifier(),
+            LogisticRegression(),
+        )
+    },
+    {"clf": (SVC(),), "clf__C": (1, 10, 100, 1000)},
+]
 
 
 grid_search = GridSearchCV(pipeline, parameters, cv=5, n_jobs=-1, verbose=1)
