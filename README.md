@@ -23,3 +23,7 @@ It also installs `jupyter` to allow notebook experience in VS Code when creating
 ## Data Source
 
 The training data is from kaggle's [Recipe Ingredients Dataset](https://www.kaggle.com/kaggle/recipe-ingredients-dataset).
+
+## Demo
+
+![watch](https://j.gifs.com/vlRBY0.gif)
