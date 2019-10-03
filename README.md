@@ -27,3 +27,7 @@ The training data is from kaggle's [Recipe Ingredients Dataset](https://www.kagg
 ## Demo
 
 ![watch](https://j.gifs.com/vlRBY0.gif)
+
+## Credits
+
+- [Icon](https://iconstore.co/icons/cafes-vector-icon-set/) by [Design Zone](https://iconstore.co/author/design-zone/)
