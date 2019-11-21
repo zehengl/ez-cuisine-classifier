@@ -26,7 +26,7 @@ The training data is from kaggle's [Recipe Ingredients Dataset](https://www.kagg
 
 ## Demo
 
-![watch](https://j.gifs.com/vlRBY0.gif)
+![watch](demo.gif)
 
 ## Credits
 
