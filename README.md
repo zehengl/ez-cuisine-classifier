@@ -3,6 +3,8 @@
 ![coding_style](https://img.shields.io/badge/code%20style-black-000000.svg)
 [![time tracker](https://wakatime.com/badge/github/zehengl/ez-cuisine-classifier.svg)](https://wakatime.com/badge/github/zehengl/ez-cuisine-classifier)
 
+A Python application to predict what is cooking
+
 ## Environment
 
 - Python 3.6
