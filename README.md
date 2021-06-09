@@ -10,7 +10,7 @@ A Python application to predict what is cooking
 
 ## Environment
 
-- Python 3.6
+- Python 3.7
 - Windows 10
 
 ## Install
