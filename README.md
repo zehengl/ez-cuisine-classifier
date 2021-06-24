@@ -32,15 +32,9 @@ The training data is from kaggle's [Recipe Ingredients Dataset](https://www.kagg
 
 ![watch](demo.gif)
 
-<hr>
-
-<sup>
-
 ## Credits
 
 - [Logo][1] by [Design Zone][2]
-
-</sup>
 
 [1]: https://iconstore.co/icons/cafes-vector-icon-set/
 [2]: https://iconstore.co/author/design-zone/
