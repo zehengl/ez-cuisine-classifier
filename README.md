@@ -18,11 +18,7 @@ A Python application to predict what is cooking
     python -m venv venv
     .\venv\Scripts\activate
     python -m pip install -U pip setuptools
-    pip install -r requirements.txt
-
-Use `pip install -r requirements-dev.txt` for development.
-It will install `pylint` and `black` to enable linting and auto-formatting.
-It also installs `jupyter` to allow notebook experience in VS Code when creating machine learning models.
+    pip install -r requirements-dev.txt
 
 ## Data Source
 
