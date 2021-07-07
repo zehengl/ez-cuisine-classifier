@@ -1,6 +1,5 @@
--f https://download.pytorch.org/whl/torch_stable.html
 fastai==1.0.61
-pandas==1.2.4
+pandas==1.3.0
 spacy==2.3.7
-torch==1.7.1
-torchvision==0.8.2
+torch==1.9.0
+torchvision==0.10.0
