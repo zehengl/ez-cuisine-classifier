@@ -1,3 +1,4 @@
 -r requirements.txt
-black==21.5b2
-pylint==2.8.3
+-r requirements-fastai.txt
+black==21.6b0
+pylint==2.9.3
