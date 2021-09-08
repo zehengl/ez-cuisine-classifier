@@ -17,7 +17,7 @@ A Python application to predict what is cooking
 
     python -m venv venv
     .\venv\Scripts\activate
-    python -m pip install -U pip setuptools
+    python -m pip install -U pip
     pip install -r requirements-dev.txt
 
 ## Data Source
