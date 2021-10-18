@@ -7,7 +7,6 @@
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "python.formatting.provider": "black",
-  "python.linting.pylintUseMinimalCheckers": false,
   "workbench.iconTheme": "vscode-icons",
   "workbench.colorTheme": "Oceanic Next (dimmed bg)",
   "workbench.productIconTheme": "material-product-icons",
