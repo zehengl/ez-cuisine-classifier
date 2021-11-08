@@ -1,60 +1,62 @@
 {% extends "bootstrap/base.html" %}
 
+<!-- head -->
 {% block head %}
-  {{ super() }}
-  <link
-    rel="shortcut icon"
-    href="{{ url_for('static', filename='favicon.png') }}"
-  />
+<!-- super() -->
+{{ super() }}
+<link
+  rel="shortcut icon"
+  href="{{ url_for('static', filename='favicon.png') }}"
+/>
 {% endblock %}
 
+<!-- title -->
 {% block title %} ez-cuisine-classifier {% endblock %}
 
+<!-- content -->
 {% block content %}
-  <div style="display: flex; min-height:100vh; flex-direction:column; flex: 1">
-    <div class="container">
-      <div class="jumbotron">
-        <h1 class="display-4">
-          <span>
-            <img
-              src="{{ url_for('static', filename='favicon.png') }}"
-              width="64"
-              height="64"
-            />
-          </span>
-          ez-cuisine-classifier
-        </h1>
-        <p class="lead">
-          A Python application to predict what's cooking based on the
-          ingredients
-        </p>
-        <hr class="my-4" />
-        <p>
-          Check out the source code at
-          <a href="https://github.com/zehengl/ez-cuisine-classifier">GitHub</a>
-        </p>
-      </div>
-    </div>
-    <div class="container">
-      {% include 'ingredients.html' %}
-      {% if cuisine %}
-        <div class="alert alert-primary" role="alert" style="margin-top: 1rem">
-          <h4 class="alert-heading">Smells Good!</h4>
-          <hr />
-          Are you probably cooking <strong>{{ cuisine }}</strong>?
-        </div>
-      {% endif %}
+<div style="display: flex; min-height: 100vh; flex-direction: column; flex: 1">
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="display-4">
+        <span>
+          <img
+            src="{{ url_for('static', filename='favicon.png') }}"
+            width="64"
+            height="64"
+          />
+        </span>
+        ez-cuisine-classifier
+      </h1>
+      <p class="lead">
+        A Python application to predict what's cooking based on the ingredients
+      </p>
+      <hr class="my-4" />
+      <p>
+        Check out the source code at
+        <a href="https://github.com/zehengl/ez-cuisine-classifier">GitHub</a>
+      </p>
     </div>
   </div>
-  <footer class="footer" style="padding: 1rem">
-    <div class="container">
-      <span class="text-muted">
-        &copy; Copyright 2019 by Zeheng Li <br />
-        Icon made by
-        <a href="https://www.iconfinder.com/design-zone">
-          Design Zone
-        </a>
-      </span>
+  <div class="container">
+    {% include 'ingredients.html' %}
+    <!-- result -->
+    {% if cuisine %}
+    <div class="alert alert-primary" role="alert" style="margin-top: 1rem">
+      <h4 class="alert-heading">Smells Good!</h4>
+      <hr />
+      Are you probably cooking <strong>{{ cuisine }}</strong>?
     </div>
-  </footer>
+    {% endif %}
+  </div>
+</div>
+<footer class="footer" style="padding: 1rem">
+  <div class="container">
+    <span class="text-muted">
+      &copy; Copyright 2019 by Zeheng Li <br />
+      Icon made by
+      <a href="https://www.iconfinder.com/design-zone"> Design Zone </a>
+    </span>
+  </div>
+</footer>
 {% endblock %}

@@ -1,8 +1,8 @@
 from flask_wtf import FlaskForm
-from wtforms import SubmitField, TextField
+from wtforms import SubmitField, StringField
 from wtforms.validators import DataRequired
 
 
 class IngredientForm(FlaskForm):
-    ingredients = TextField("Ingredients", validators=[DataRequired()])
+    ingredients = StringField("Ingredients", validators=[DataRequired()])
     submit = SubmitField("Submit")
