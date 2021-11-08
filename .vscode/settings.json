@@ -2,15 +2,14 @@
   "autoDocstring.docstringFormat": "google",
   "breadcrumbs.enabled": true,
   "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
   "editor.rulers": [88, 120],
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "python.formatting.provider": "black",
-  "workbench.iconTheme": "vscode-icons",
   "workbench.colorTheme": "Oceanic Next (dimmed bg)",
-  "workbench.productIconTheme": "material-product-icons",
-  "python.pythonPath": "venv\\Scripts\\python.exe",
-  "editor.minimap.enabled": false,
-  "workbench.editor.enablePreview": false
+  "workbench.editor.enablePreview": false,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.productIconTheme": "material-product-icons"
 }
