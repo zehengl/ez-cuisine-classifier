@@ -1,6 +1,5 @@
 {
   "autoDocstring.docstringFormat": "google",
-  "breadcrumbs.enabled": true,
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
   "editor.rulers": [88, 120],
