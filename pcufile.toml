@@ -9,5 +9,4 @@ filter = [
 ignores =[
     "fastai",
     "spacy",
-
 ]
