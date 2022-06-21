@@ -15,10 +15,12 @@ A Python application to predict what is cooking
 
 ## Install
 
-    python -m venv venv
-    .\venv\Scripts\activate
+    python -m venv .venv
+    .\.venv\Scripts\activate
     python -m pip install -U pip
     pip install -r requirements-dev.txt
+
+If GPU/CUDA is available, add `--extra-index-url https://download.pytorch.org/whl/cu113` in `requirements-dev.txt` to install the CUDA-enabled version of `PyTorch`.
 
 ## Data Source
 

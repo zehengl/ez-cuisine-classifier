@@ -7,6 +7,4 @@ no_color = false
 filter = [
 ]
 ignores =[
-    "fastai",
-    "spacy",
 ]

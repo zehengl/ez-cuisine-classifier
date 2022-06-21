@@ -3,18 +3,16 @@ import json
 import os
 
 import pandas as pd
-from fastai.text import (
+from fastai.text.all import (
     AWD_LSTM,
-    TextClasDataBunch,
-    TextLMDataBunch,
+    Perplexity,
+    TextDataLoaders,
+    accuracy,
     language_model_learner,
     text_classifier_learner,
 )
-from sklearn.model_selection import train_test_split
-
 
 data = "data"
-model = "model_fastai"
 
 if __name__ == "__main__":
 
@@ -25,52 +23,44 @@ if __name__ == "__main__":
 
     df = pd.DataFrame({"cuisine": cuisine, "ingredients": ingredients})
 
-    train_df, valid_df = train_test_split(
+    dls_lm = TextDataLoaders.from_df(
+        df=df,
+        text_col="ingredients",
+        label_col="cuisine",
+        is_lm=True,
+        valid_pct=0.1,
+    )
+
+    learn = language_model_learner(
+        dls_lm,
+        AWD_LSTM,
+        drop_mult=0.5,
+        metrics=[accuracy, Perplexity()],
+    ).to_fp16()
+
+    learn.lr_find()
+    learn.fit_one_cycle(5, learn.recorder.lr)
+
+    print(learn.predict("green bell", 1, temperature=0.75))
+
+    learn.save_encoder("encoder")
+
+    dls_clas = TextDataLoaders.from_df(
         df,
-        stratify=df["cuisine"],
-        test_size=0.2,
-        random_state=1024,
+        text_vocab=dls_lm.vocab,
+        text_col="ingredients",
+        label_col="cuisine",
     )
 
-    text_lm = TextLMDataBunch.from_df(
-        train_df=train_df,
-        valid_df=valid_df,
-        path="",
-    )
-    lm_learner = language_model_learner(
-        text_lm,
-        arch=AWD_LSTM,
-        drop_mult=0.2,
+    learn = text_classifier_learner(
+        dls_clas,
+        AWD_LSTM,
+        drop_mult=0.5,
+        metrics=accuracy,
     )
 
-    lm_learner.lr_find()
-    lm_learner.recorder.plot(suggestion=True)
+    learn = learn.load_encoder("encoder")
+    learn.lr_find()
+    learn.fit_one_cycle(5, learn.recorder.lr)
 
-    lm_learner.fit_one_cycle(1, lm_learner.recorder.min_grad_lr)
-
-    lm_learner.save_encoder(model)
-
-    text_clas = TextClasDataBunch.from_df(
-        train_df=train_df,
-        valid_df=valid_df,
-        vocab=text_lm.train_ds.vocab,
-        path="",
-    )
-
-    clf = text_classifier_learner(
-        text_clas,
-        arch=AWD_LSTM,
-        drop_mult=0.2,
-    )
-    clf.load_encoder(model)
-
-    clf.lr_find()
-    clf.recorder.plot(suggestion=True)
-
-    clf.fit_one_cycle(1, clf.recorder.min_grad_lr)
-
-    print(lm_learner.predict("green bell"))
-
-    print(text_clas.train_ds.y.c2i)
-
-    print(clf.predict("wrap avocado beef"))
+    print(learn.predict("wrap avocado beef"))
