@@ -1,5 +1,5 @@
 -r requirements.txt
-black==22.6.0
+black==22.8.0
 fastai==2.7.9
 jupyterlab==3.4.5
 pandas==1.4.4
