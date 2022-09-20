@@ -2,7 +2,7 @@
 black==22.8.0
 fastai==2.7.9
 jupyterlab==3.4.7
-pandas==1.4.4
+pandas==1.5.0
 pip-check-updates==0.18.0
 pylint==2.15.3
 torch
