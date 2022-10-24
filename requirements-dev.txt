@@ -1,10 +1,10 @@
 -r requirements.txt
 black==22.10.0
 fastai==2.7.9
-jupyterlab==3.4.8
-pandas==1.5.0
+jupyterlab==3.5.0
+pandas==1.5.1
 pip-check-updates==0.18.0
-pylint==2.15.4
+pylint==2.15.5
 torch
 torchvision
 torchaudio
