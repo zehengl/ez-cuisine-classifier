@@ -4,7 +4,7 @@ fastai==2.7.10
 jupyterlab==3.5.1
 pandas==1.5.2
 pip-check-updates==0.18.0
-pylint==2.15.7
+pylint==2.15.8
 torch
 torchvision
 torchaudio
