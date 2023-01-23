@@ -2,8 +2,8 @@
 black==22.12.0
 fastai==2.7.10
 jupyterlab==3.5.2
-pandas==1.5.2
-pip-check-updates==0.18.0
+pandas==1.5.3
+pip-check-updates==0.18.1
 pylint==2.15.10
 torch
 torchvision
