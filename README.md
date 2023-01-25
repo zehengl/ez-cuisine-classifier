@@ -6,7 +6,7 @@
 
 ![coding_style](https://img.shields.io/badge/code%20style-black-000000.svg)
 
-A Python application to predict what is cooking
+A Streamlit app to predict what is cooking
 
 ## Environment
 
