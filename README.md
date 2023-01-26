@@ -26,10 +26,6 @@ If GPU/CUDA is available, add `--extra-index-url https://download.pytorch.org/wh
 
 The training data is from kaggle's [Recipe Ingredients Dataset](https://www.kaggle.com/kaggle/recipe-ingredients-dataset).
 
-## Demo
-
-![watch](demo.gif)
-
 ## Credits
 
 - [Logo][1] by [Design Zone][2]
