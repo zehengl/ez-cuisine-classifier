@@ -8,7 +8,7 @@ def load_model():
     return model
 
 
-st.set_page_config(page_title="ez-cuisine-classifier", page_icon=":cook:")
+st.set_page_config(page_title="ez-cuisine-classifier", page_icon=":fork_and_knife:")
 _, center, _ = st.columns([2, 1, 2])
 with center:
     st.image(
