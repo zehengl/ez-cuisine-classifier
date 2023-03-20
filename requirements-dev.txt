@@ -2,9 +2,9 @@
 -r requirements-flask.txt
 black==23.1.0
 fastai==2.7.11
-jupyterlab==3.6.1
+jupyterlab==3.6.2
 pandas==1.5.3
-pip-check-updates==0.19.1
+pip-check-updates==0.20.0
 pylint==2.17.0
 torch
 torchvision
