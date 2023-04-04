@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://github.com/zehengl/ez-cuisine-classifier/raw/main/static/favicon.png" alt="logo" height="196">
+    <img src="https://github.com/zehengl/ez-cuisine-classifier/raw/main/static/favicon.png" alt="logo" height="128">
 </div>
 
 # ez-cuisine-classifier
