@@ -1,6 +1,6 @@
 -r requirements.txt
 -r requirements-flask.txt
-black==23.3.0
+black==23.7.0
 fastai==2.7.12
 jupyterlab==4.0.2
 pandas==2.0.3
