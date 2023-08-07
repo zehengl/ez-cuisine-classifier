@@ -2,7 +2,7 @@
 -r requirements-flask.txt
 black==23.7.0
 fastai==2.7.12
-jupyterlab==4.0.3
+jupyterlab==4.0.4
 pandas==2.0.3
 pip-check-updates==0.22.0
 pylint==2.17.5
