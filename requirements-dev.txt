@@ -3,9 +3,9 @@
 black==23.9.1
 fastai==2.7.12
 jupyterlab==4.0.6
-pandas==2.1.0
+pandas==2.1.1
 pip-check-updates==0.22.0
-pylint==2.17.5
+pylint==2.17.6
 torch
 torchvision
 torchaudio
