@@ -1,7 +1,7 @@
 -r requirements.txt
 -r requirements-flask.txt
 fastai==2.7.14
-jupyterlab==4.1.1
+jupyterlab==4.1.2
 pandas==2.2.0
 pip-check-updates==0.23.1
 torch
