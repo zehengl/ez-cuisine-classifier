@@ -1,6 +1,6 @@
 -r requirements.txt
 -r requirements-flask.txt
-fastai==2.7.15
+fastai==2.7.16
 jupyterlab==4.2.4
 pandas==2.2.2
 pip-check-updates==0.27.0
