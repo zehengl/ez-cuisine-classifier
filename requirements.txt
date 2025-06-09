@@ -1,2 +1,2 @@
-scikit-learn==1.6.1
+scikit-learn==1.7.0
 streamlit==1.45.1
