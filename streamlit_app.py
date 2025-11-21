@@ -9,12 +9,6 @@ def load_model():
 
 
 st.set_page_config(page_title="ez-cuisine-classifier", page_icon=":fork_and_knife:")
-_, center, _ = st.columns([2, 1, 2])
-with center:
-    st.image(
-        "https://github.com/zehengl/ez-cuisine-classifier/raw/main/static/favicon.png",
-        use_column_width=True,
-    )
 st.title("ez-cuisine-classifier")
 st.caption("A Streamlit app to predict what is cooking")
 
