@@ -2,7 +2,7 @@ import streamlit as st
 from joblib import load
 
 
-@st.cache(allow_output_mutation=True)
+@st.cache_resource
 def load_model():
     model = load("model_sklearn")
     return model
