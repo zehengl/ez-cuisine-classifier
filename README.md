@@ -6,8 +6,7 @@ A Streamlit app to predict what is cooking
 
 ## Environment
 
-- Python 3.9
-- Windows 10
+- Python 3.12
 
 ## Install
 
