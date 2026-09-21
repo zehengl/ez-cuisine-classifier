@@ -1,8 +1,8 @@
 -r requirements.txt
 -r requirements-flask.txt
 fastai==2.8.12
-jupyterlab==4.6.3
-pandas==3.0.5
+jupyterlab==4.6.4
+pandas==3.0.6
 pip-check-updates==0.29.0
 torch
 torchvision

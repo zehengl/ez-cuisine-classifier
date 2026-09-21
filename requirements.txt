@@ -1,2 +1,2 @@
 scikit-learn==1.9.1
-streamlit==1.63.0
+streamlit==1.64.0
